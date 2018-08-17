@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Repositories</title>
+</head>
+<body>
+	<div>
+		<h1>Your repositories are:</h1>
+	</div>
+	{% for name in names %}
+		<div>
+			<ul>
+				<li>{{name}}</li>
+			</ul>
+		</div>
+	{% endfor %}
+	<div>
+		<h1>Language of repositories are:</h1>
+	</div>
+	{% for language in languages %}
+		<div>
+			<ul>
+				<li>{{language}}</li>
+			</ul>
+		</div>
+	{% endfor %}
+</body>
+</html>	
